@@ -1,0 +1,82 @@
+
+.customers-header .left-side-header .search-input input {
+    border: 1px solid #ddd;
+    border-radius: 40px;
+}
+/* 
+.customers-header .left-side-header .search-input::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1001213;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+} */
+
+.customers-header .left-side-header .search-input select {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+thead {
+    background-color: #F4F4FB;
+}
+
+.css-13cymwt-control {
+    border-radius: 200px;
+    /* background-color: tomato; */
+
+}
+
+/* .css-13cymwt-control:focus {
+    background-color: tomato;
+} */
+/* 
+.css-13cymwt-control:focus,
+.css-w9q2zk-Input2:focus {
+    outline: none;
+} */
+
+/* .css-art2ul-ValueContainer2 {
+
+} */
+/* 
+ .css-w9q2zk-Input2 {
+} 
+
+.css-t3ipsp-control:hover {
+    border-radius: 200px;
+}
+.select__control--is-focused {
+    background-color: teal;
+}
+.css-art2ul-ValueContainer2::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0b0";
+    position: absolute;
+    right: 5px;
+    color: #888;
+} */
+
+.add-btn {
+    background-color: var(--blue-color);
+}
+.skew {
+    transform: translateX(-20px) skewX(40deg);
+    background: rgb(244, 245, 252);
+    background: linear-gradient(90deg, rgba(244, 245, 252, 1) 0%, rgba(235, 235, 243, 1) 65%);
+}
+.head-table {
+    border-top-left-radius:10px ;
+}

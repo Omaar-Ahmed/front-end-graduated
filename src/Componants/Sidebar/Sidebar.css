@@ -1,0 +1,47 @@
+.side-bar,
+.side-bar ul {
+    transition: var(--main-transition);
+}
+
+.side-bar li {
+    list-style: none;
+    padding: 10px 10px;
+    transition: var(--low-transtiton);
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: #202040;
+}
+
+.side-bar i {
+    position: relative;
+    transition: var(--low-transtiton);
+}
+
+.side-bar li::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(229 231 235);
+    color: white;
+    z-index: 0;
+    left: 0;
+    transition: var(--main-transition);
+    border-radius: 8px;
+}
+
+.side-bar li:hover::before {
+    width: 100%;
+}
+
+.parent-sidebar span {
+    transition: 0.5s;
+    position: absolute;
+    left: -500px;
+}
+
+.parent-sidebar:hover span {
+    left: 55px;
+}

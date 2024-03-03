@@ -1,13 +1,14 @@
-import { useState } from 'react'
+// import Sidebar from "./Componants/Sidebar/Sidebar";
+import Customers from "./Componants/Customers/CustomersTable/CustomersTabel";
 
 function App() {
-  const [count, setCount] = useState(null)
-
   return (
     <>
-     
+      <div className=" xl:p-8 overflow-hidden  min-h-screen bg-landing md:p-2">
+        <Customers />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
