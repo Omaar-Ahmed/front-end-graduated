@@ -40,7 +40,7 @@ export default function Customers() {
             />
             <button
               className="add-btn py-2 px-5 text-white  items-center rounded-3xl 
-            md:flex sm:hiddenx"
+            md:flex hidden"
             >
               <span className="text-xl pe-2">+</span>New Customer
             </button>
@@ -61,13 +61,10 @@ export default function Customers() {
                   Address
                 </th>
                 <th scope="col" className="px-6 py-4">
-                  Car Type
+                  Car Type - Version
                 </th>
                 <th scope="col" className="px-6 py-4">
-                  Version
-                </th>
-                <th scope="col" className="px-6 py-4">
-                  Car Number
+                  Id Car
                 </th>
                 <th scope="col" className="px-6 py-4">
                   Status
@@ -85,13 +82,10 @@ export default function Customers() {
                   Shoubra - Abo elhana
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  Kia Serato
+                  Kia Serato - 2010
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  2010
-                </td>
-                <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  أ ب ت - 123
+                  108320123129812
                 </td>
                 <td className="whitespace-nowrap  font-medium ">
                   <span className="text-white  py-2 px-5 rounded-3xl bg-main-color">
@@ -109,13 +103,10 @@ export default function Customers() {
                   Shoubra - Abo elhana
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  Kia Serato
+                  Kia Serato - 2010
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  2010
-                </td>
-                <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  أ ب ت - 123
+                  108320123129812
                 </td>
                 <td className="whitespace-nowrap  font-medium ">
                   <span className="text-white bg-perfect py-2 px-5 rounded-3xl">
@@ -133,13 +124,10 @@ export default function Customers() {
                   Shoubra - Abo elhana
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  Kia Serato
+                  Kia Serato - 2010
                 </td>
                 <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  2010
-                </td>
-                <td className="whitespace-nowrap px-6 py-4 font-medium">
-                  أ ب ت - 123
+                  108320123129812
                 </td>
                 <td className="whitespace-nowrap  font-medium ">
                   <span className="text-white  py-2 px-5 rounded-3xl bg-pending">

@@ -1,8 +1,8 @@
-
 .customers-header .left-side-header .search-input input {
     border: 1px solid #ddd;
     border-radius: 40px;
 }
+
 /* 
 .customers-header .left-side-header .search-input::after {
     font-family: "Font Awesome 5 Free";
@@ -32,11 +32,6 @@ thead {
     background-color: #F4F4FB;
 }
 
-.css-13cymwt-control {
-    border-radius: 200px;
-    /* background-color: tomato; */
-
-}
 
 /* .css-13cymwt-control:focus {
     background-color: tomato;
@@ -72,11 +67,13 @@ thead {
 .add-btn {
     background-color: var(--blue-color);
 }
+
 .skew {
     transform: translateX(-20px) skewX(40deg);
     background: rgb(244, 245, 252);
     background: linear-gradient(90deg, rgba(244, 245, 252, 1) 0%, rgba(235, 235, 243, 1) 65%);
 }
+
 .head-table {
-    border-top-left-radius:10px ;
+    border-top-left-radius: 10px;
 }

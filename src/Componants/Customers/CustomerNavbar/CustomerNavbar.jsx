@@ -7,6 +7,7 @@ export default function CustomerNavbar() {
   const [openNotify, setOpenNotify] = useState(false);
   const [openUserSettings, setOpenUserSettings] = useState(false);
   const [isSearchable, setIsSearchable] = useState(true);
+  const [openSideBar, setOpenSideBar] = useState(false);
 
   document.addEventListener("click", (e) => {
     if (e.target.id === "user-icon" && openNotify === true) {
@@ -37,8 +38,14 @@ export default function CustomerNavbar() {
       <div
         className="customers-header bg-white 
          flex items-center justify-center 
-        relative py-3 rounded-lg z-20"
+        relative py-3 ps-2 rounded-lg z-20"
       >
+        <div
+          id="toggle"
+          className={`toggle bg-gray-800 rounded-lg flex items-center justify-center flex-col 
+          ${openSideBar ? "active" : ""}`}
+          onClick={() => setOpenSideBar(!openSideBar)}
+        ></div>
         <div
           className="logo flex 
       items-center justify-center gap-5 ms-3"
@@ -133,42 +140,45 @@ export default function CustomerNavbar() {
       </div>
       {/* Side Bar  */}
       <div
-        className=" parent-sidebar absolute  md:w-16 hover:w-80 
-         z-10 bg-white top-0 left-0 overflow-hidden h-screen main-transition
-           
-    "
+        className={`parent-sidebar absolute  ${
+          openSideBar ? "w-80" : "md:w-16"
+        } 
+        z-10 bg-white top-0 left-0 overflow-hidden h-screen main-transition
+        `}
       >
         <div
           className="side-bar mt-36
       h-full	py-2 ease-linear overflow-hidden"
         >
           <ul
-            className=" flex flex-col gap-5 
-      overflow-hidden px-3  "
+            className={` flex flex-col gap-5 
+      overflow-hidden px-3  `}
           >
             <li className="">
-              <i className="fa-solid fa-warehouse icon-color"></i>{" "}
-              <span>Warehouse</span>
+              <i className="fa-solid fa-warehouse icon-color  relative z-10"></i>{" "}
+              <span className={`${openSideBar ? "active" : ""}  overflow-hidden`}>
+                Warehouse
+              </span>
             </li>
             <li>
               <i className="fa-solid fa-users icon-color"></i>{" "}
-              <span>Customers</span>
+              <span className={`${openSideBar ? "active" : ""}  overflow-hidden`}>Customers</span>
             </li>
             <li>
               <i className="fa-solid fa-paper-plane icon-color"></i>
-              <span>Request Spares From Outside</span>
+              <span className={`${openSideBar ? "active" : ""}  overflow-hidden`}>Request Spares From Outside</span>
             </li>
             <li>
               <i className="fa-solid fa-pen-to-square icon-color"></i>
-              <span>Send Spares inside</span>
+              <span className={`${openSideBar ? "active" : ""}  overflow-hidden`}>Send Spares inside</span>
             </li>
             <li>
               <i className="fa-solid fa-users icon-color"></i>{" "}
-              <span>Customers</span>
+              <span className={`${openSideBar ? "active" : ""}  overflow-hidden`}>Customers</span>
             </li>
             <li>
               <i className="fa-solid fa-warehouse icon-color"></i>{" "}
-              <span>Warehouse</span>
+              <span className={`${openSideBar ? "active" : ""}  overflow-hidden`}>Warehouse</span>
             </li>
           </ul>
         </div>
